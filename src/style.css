@@ -1,0 +1,76 @@
+.game-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #dcdcdc;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.restart-btn, .restart-full-btn {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.restart-btn {
+    background-color: #ff4757;
+    color: white;
+    box-shadow: 0 4px 6px rgba(255, 71, 87, 0.3);
+}
+
+.restart-btn:hover {
+    background-color: #e84118;
+    transform: scale(1.05);
+}
+
+.restart-full-btn {
+    background-color: #1e90ff;
+    color: white;
+    box-shadow: 0 4px 6px rgba(30, 144, 255, 0.3);
+}
+
+.restart-full-btn:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
